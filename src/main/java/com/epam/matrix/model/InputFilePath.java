@@ -9,23 +9,9 @@ import java.io.*;
  */
 public class InputFilePath {
     public static String filePath() throws IOException {
-        String filename = null;
-        while (true) {
-            try {
-                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-                System.out.println(Constants.FILEPATH);
-                filename = br.readLine();
-                PrintWriter pw = new PrintWriter(filename);
-                break;
-            } catch (FileNotFoundException e) {
-                System.err.println("Путь файла введен некорректно");
-
-                continue;
-
-            }
-
-
-        }
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println(Constants.FILEPATH);
+        String filename = br.readLine();
         return filename;
     }
 }
