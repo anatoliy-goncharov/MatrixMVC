@@ -16,7 +16,7 @@ public class InputDataMatrix {
     public int row;
     private int column;
     public int Row(){
-        for (; ; ) {
+        while (true) {
             try {
 
                 if ((first = Integer.parseInt(br.readLine())) > 0) {
@@ -40,7 +40,7 @@ public class InputDataMatrix {
         return row;
     }
     public int Column(){
-        for (; ; ) {
+        while (true) {
             try {
                 if ((second = Integer.parseInt(br.readLine())) > 0) {
                     column = second;
