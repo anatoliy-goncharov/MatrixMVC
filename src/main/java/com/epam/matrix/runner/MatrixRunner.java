@@ -4,6 +4,7 @@ package main.java.com.epam.matrix.runner;
 import main.java.com.epam.matrix.controller.MatrixTurnOn;
 import main.java.com.epam.matrix.controller.TransposeMatrix;
 import main.java.com.epam.matrix.controller.Multiply;
+import main.java.com.epam.matrix.util.Constants;
 import main.java.com.epam.matrix.view.Print;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,7 +22,21 @@ public class MatrixRunner {
         while(true) {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             Print.beginer();
-            action = Integer.parseInt(br.readLine());
+            while (true) {
+                try {
+
+                    action = Integer.parseInt(br.readLine());
+                    if (action <= Constants.MAXACTIONS && action > 0)
+                    break;
+                    else{
+                        System.err.println(Constants.NOACTIONS + " " + Constants.REPLY);
+                        continue;
+                    }
+                }catch (NumberFormatException e) {
+                    System.err.println(Constants.MATRIXDATAERROR + " " + Constants.REPLY);
+                    continue;
+                }
+            }
             if (action == 1) {
                 TransposeMatrix transposeMatrix = new TransposeMatrix();
                 transposeMatrix.action();
