@@ -13,14 +13,18 @@ import java.io.InputStreamReader;
 public class InputFilePath {
     public static String filePath() throws IOException {
         String filename = null;
-        try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            System.out.println(Constants.FILEPATH);
-            filename = br.readLine();
+        while (true) {
+            try {
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                System.out.println(Constants.FILEPATH);
+                filename = br.readLine();
 
-        }catch (FileNotFoundException e){
-            System.err.println("Путь файла введен некорректно");
+
+            } catch (FileNotFoundException e) {
+                System.err.println("Путь файла введен некорректно");
+                continue;
+            }
+            return filename;
         }
-        return filename;
     }
 }
