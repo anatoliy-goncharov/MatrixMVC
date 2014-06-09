@@ -24,23 +24,23 @@ public class MatrixRunner {
             Print.beginer();
             while (true) {
                 try {
-
                     action = Integer.parseInt(br.readLine());
                     if (action <= Constants.MAXACTIONS && action > 0)
                     break;
                     else{
                         System.err.println(Constants.NOACTIONS + " " + Constants.REPLY);
+                        System.err.flush();
                         continue;
                     }
                 }catch (NumberFormatException e) {
                     System.err.println(Constants.MATRIXDATAERROR + " " + Constants.REPLY);
+                    System.err.flush();
                     continue;
                 }
             }
             if (action == 1) {
                 TransposeMatrix transposeMatrix = new TransposeMatrix();
                 transposeMatrix.action();
-
                 continue;
             }
             else if (action == 2) {

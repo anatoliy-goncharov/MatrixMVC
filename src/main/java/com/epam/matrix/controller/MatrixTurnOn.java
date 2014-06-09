@@ -13,10 +13,11 @@ public class MatrixTurnOn {
     public MatrixTurnOn() throws FileNotFoundException {}
     private static int action = 2;
     public void action() throws IOException {
+
         InputFilePath inputFilePath = new InputFilePath();
         String filename = inputFilePath.filePath();
-
         InputDataMatrix idm = new InputDataMatrix();
+
         System.out.println(Constants.ROWNUMBER);
         int row = idm.Row();
         System.out.println(Constants.COLUMNNUMBER);

@@ -39,6 +39,7 @@ public class TransposeMatrix extends InputDataMatrix{
 
         } catch (OutOfMemoryError e) {
             System.err.println(Constants.OUTOFMEMORY);
+            System.err.flush();
         }
     }
 }

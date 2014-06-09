@@ -23,17 +23,20 @@ public class InputDataMatrix {
                     row = first;
                     break;
                 } else {
-                    System.out.println(Constants.REPLYROWNUMBER);
                     System.err.println(Constants.MATRIXDATAERROR);
+                    System.err.flush();
+                    System.out.println(Constants.REPLYROWNUMBER);
                     continue;
                 }
             } catch (IOException e) {
-                System.out.println(Constants.REPLYROWNUMBER);
                 System.err.println(Constants.MATRIXDATAERROR);
+                System.err.flush();
+                System.out.println(Constants.REPLYROWNUMBER);
                 continue;
             } catch (NumberFormatException e) {
-                System.out.println(Constants.REPLYROWNUMBER);
                 System.err.println(Constants.MATRIXDATAERROR);
+                System.err.flush();
+                System.out.println(Constants.REPLYROWNUMBER);
                 continue;
             }
         }
@@ -46,17 +49,21 @@ public class InputDataMatrix {
                     column = second;
                     break;
                 } else {
-                    System.out.println(Constants.REPLYCOLUMNNUMBER);
                     System.err.println(Constants.MATRIXDATAERROR);
+                    System.err.flush();
+                    System.out.println(Constants.REPLYCOLUMNNUMBER);
+
                     continue;
                 }
             } catch (IOException e) {
-                System.out.println(Constants.REPLYCOLUMNNUMBER);
                 System.err.println(Constants.MATRIXDATAERROR);
+                System.err.flush();
+                System.out.println(Constants.REPLYCOLUMNNUMBER);
                 continue;
             } catch (NumberFormatException e) {
-                System.out.println(Constants.REPLYCOLUMNNUMBER);
                 System.err.println(Constants.MATRIXDATAERROR);
+                System.err.flush();
+                System.out.println(Constants.REPLYCOLUMNNUMBER);
                 continue;
             }
         }

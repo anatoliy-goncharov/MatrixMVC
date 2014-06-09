@@ -16,14 +16,15 @@ public class Multiply {
     public static void multiply() throws IOException {
         InputFilePath inputFilePath = new InputFilePath();
         String filename = inputFilePath.filePath();
-
         InputDataMatrix idm = new InputDataMatrix();
+
         System.out.println(Constants.ROWNUMBER);
         int rowFirst = idm.Row();
         System.out.println(Constants.COLUMNNUMBER);
         int columnFirst = idm.Column();
 
         System.err.println(Constants.ROWWARNING);
+        System.err.flush();
         int rowSecond = columnFirst;
         System.out.println(Constants.COLUMNNUMBERSECOND);
 
@@ -40,12 +41,9 @@ public class Multiply {
                 int sum = 0;
                 for (int thisCol = 0; thisCol < columnFirst; ++thisCol) {
                     sum += first.getElement(thisRow, thisCol) * second.getElement(thisCol, otherCol);
-
                 }
                 result.setElement(thisRow, otherCol, sum);
             }
-
-
         }
         SaveToFileResult.multiplySave(first, second, result, filename);
         Print.resultView(rowFirst, columnSecond, filename);

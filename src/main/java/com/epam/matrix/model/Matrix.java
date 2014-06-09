@@ -25,5 +25,4 @@ public class Matrix {
     public int getColumnsNum() {
         return matrix[0].length;
     }
-
 }
