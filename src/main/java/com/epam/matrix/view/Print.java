@@ -1,7 +1,6 @@
 package main.java.com.epam.matrix.view;
 
 import main.java.com.epam.matrix.util.Constants;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

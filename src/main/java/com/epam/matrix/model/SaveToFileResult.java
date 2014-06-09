@@ -1,7 +1,6 @@
 package main.java.com.epam.matrix.model;
 
 import main.java.com.epam.matrix.util.Constants;
-
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 

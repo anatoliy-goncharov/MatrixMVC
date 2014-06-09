@@ -1,7 +1,6 @@
 package main.java.com.epam.matrix.model;
 
 import main.java.com.epam.matrix.util.Constants;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
