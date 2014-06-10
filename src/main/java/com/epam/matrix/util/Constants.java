@@ -33,4 +33,5 @@ public class Constants {
     public static final String RESULTMESSAGE = "Результат: ";
     public static final String CALCULATORREPLY = "Хотите продолжить работу с калькулятором? Да/Нет";
     public static final String UNCOWNCOMAND = "Неизвестная команда. Калькулятор завершает работу";
+    public static final String INFOCALCULATOR = "Хотите вывести информацию о классе CalculatorOperatons? Да/Нет";
 }
