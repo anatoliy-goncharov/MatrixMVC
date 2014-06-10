@@ -14,7 +14,7 @@ import java.io.InputStreamReader;
  * Created by Anatoliy_Goncharov on 04.06.2014.
  */
 
-public class MatrixRunner {
+public class Runner {
 
     public static void main(String[] args) throws NumberFormatException, IOException {
         int action;
@@ -42,17 +42,23 @@ public class MatrixRunner {
                 TransposeMatrix transposeMatrix = new TransposeMatrix();
                 transposeMatrix.action();
                 continue;
-            }
-            else if (action == 2) {
+            } else if (action == 2) {
                 MatrixTurnOn matrixTurnOn = new MatrixTurnOn();
                 matrixTurnOn.action();
                 continue;
-            }
-            else if (action == 3){
+            } else if (action == 3){
                 Multiply multiply = new Multiply();
                 multiply.multiply();
                 continue;
-            } else if (action == 4){
+            } else if (action ==4){
+                Calculator сalculator = new Calculator();
+                сalculator.calc();
+                continue;
+            } else if (action ==5){
+                DraftCalculator draftCalculator = new DraftCalculator();
+                draftCalculator.draftCalc();
+                continue;
+            } else if (action == 6){
                 break;
             }
         }
