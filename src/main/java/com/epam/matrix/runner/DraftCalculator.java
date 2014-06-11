@@ -44,6 +44,8 @@ public class DraftCalculator {
                     j++;
                 }
             }*/
+
+
             if (expression.length == 2) {
                 doubles = new double[expression.length];
                 for (int i = 0; i < expression.length; i++) {
@@ -57,24 +59,22 @@ public class DraftCalculator {
                         System.out.println(Constants.RESULTMESSAGE + result + "\n");
                     } else{
                         System.out.println("Результат: " + sum + "\n");}
-                }
-                else if (operators[1].equals("+")) {
+                } else if (operators[1].equals("+")) {
                     double sum = doubles[0] + doubles[1];
                     if (sum - Math.round(sum) == 0.0) {
                         int result = (int) Math.round(sum);
                         System.out.println("Результат: " + result + "\n");
+
                     } else{
                         System.out.println("Результат: " + sum + "\n");}
-                }
-                else if (operators[1].equals("*")) {
+                } else if (operators[1].equals("*")) {
                     double sum = doubles[0] * doubles[1];
                     if (sum - Math.round(sum) == 0.0) {
                         int result = (int) Math.round(sum);
                         System.out.println("Результат: " + result + "\n");
                     } else{
                         System.out.println("Результат: " + sum + "\n");}
-                }
-                else if (operators[1].equals("/")) {
+                } else if (operators[1].equals("/")) {
                     double sum = doubles[0] / doubles[1];
                     if (sum - Math.round(sum) == 0.0) {
                         int result = (int) Math.round(sum);

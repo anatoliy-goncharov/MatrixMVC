@@ -15,7 +15,6 @@ import java.io.InputStreamReader;
  */
 
 public class Runner {
-
     public static void main(String[] args) throws NumberFormatException, IOException {
         int action;
 

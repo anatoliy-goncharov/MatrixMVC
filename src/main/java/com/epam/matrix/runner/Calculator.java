@@ -29,13 +29,13 @@ public class Calculator {
             CalculatorOperations operations = new CalculatorOperations();
             double resultAction = 0;
             if (operand.equals("*")) {
-                resultAction = operations.mul(first, second, operand);
+                resultAction = operations.mul(first, second);
             } else if (operand.equals("/")) {
-                resultAction = operations.dev(first, second, operand);
+                resultAction = operations.dev(first, second);
             } else if (operand.equals("+")) {
-                resultAction = operations.sum(first, second, operand);
+                resultAction = operations.sum(first, second);
             } else if (operand.equals("-")) {
-                resultAction = operations.sub(first, second, operand);
+                resultAction = operations.sub(first, second);
             }
 
             if (resultAction - Math.round(resultAction) == 0.0) {

@@ -5,19 +5,19 @@ package main.java.com.epam.matrix.controller;
  */
 public class CalculatorOperations {
     public static double result;
-    public double mul(double first, double second, String operand){
+    public double mul(double first, double second){
         result = first * second;
         return result;
     }
-    public double dev(double first, double second, String operand){
+    public double dev(double first, double second){
         result = first / second;
         return result;
     }
-    public double sum(double first, double second, String operand){
+    public double sum(double first, double second){
         result = first + second;
         return result;
     }
-    public double sub(double first, double second, String operand){
+    public double sub(double first, double second){
         result = first - second;
         return result;
     }

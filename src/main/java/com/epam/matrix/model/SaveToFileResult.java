@@ -24,8 +24,6 @@ public class SaveToFileResult {
                 message = Constants.TRANSPOSE;break;
             case 2:
                 message = Constants.TURNON;break;
-            case 3:
-                message = Constants.MULTIPLY;break;
         }
         pw.println(message + second.getRowsNum() + " x " + second.getColumnsNum() + "]\n");
         for (int i = 0; i < second.getRowsNum(); i++) {
