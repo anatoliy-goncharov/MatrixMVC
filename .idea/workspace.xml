@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c59d03ed-d01b-4070-807c-5232d5aa2239" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/matrix/runner/DraftCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/matrix/runner/DraftCalculator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MatrixMVC.iws" />
@@ -638,7 +637,11 @@
       <created>1402402242009</created>
       <updated>1402402242009</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Оптимизация Чернового Калькулятора">
+      <created>1402482591312</created>
+      <updated>1402482591312</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -713,7 +716,8 @@
     <MESSAGE value="навел красоту в файлах" />
     <MESSAGE value="Добавил Калькулятор" />
     <MESSAGE value="Прикрутил рефлексию" />
-    <option name="LAST_COMMIT_MESSAGE" value="Прикрутил рефлексию" />
+    <MESSAGE value="Оптимизация Чернового Калькулятора" />
+    <option name="LAST_COMMIT_MESSAGE" value="Оптимизация Чернового Калькулятора" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
