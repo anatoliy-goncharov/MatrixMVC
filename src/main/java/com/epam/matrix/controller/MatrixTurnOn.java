@@ -8,6 +8,7 @@ import java.io.*;
 /**
  * Created by Anatoliy_Goncharov on 03.06.2014.
  */
+
 public class MatrixTurnOn {
     public MatrixTurnOn() throws FileNotFoundException {}
     private static int action = 2;

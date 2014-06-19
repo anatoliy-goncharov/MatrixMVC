@@ -57,7 +57,11 @@ public class Runner {
                 DraftCalculator draftCalculator = new DraftCalculator();
                 draftCalculator.draftCalc();
                 continue;
-            } else if (action == 6){
+            } else if (action ==6){
+                MyFlowers myFlowers = new MyFlowers();
+                myFlowers.myFlowers();
+                continue;
+            }else if (action == 7){
                 break;
             }
         }
