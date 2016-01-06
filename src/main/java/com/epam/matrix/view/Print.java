@@ -13,6 +13,7 @@ public class Print {
     //Метод вывода на консоль Меню приложения
     public static void beginer(){
         System.out.println(Constants.BEGIN);
+        System.out.println(Constants.BEGIN);
     }
 
     /* Метод вывода на консоль содержимого файла,
